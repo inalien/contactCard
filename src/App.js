@@ -69,7 +69,7 @@ export default function App() {
                   <div className="">
                     <div className="verticalcenter">
                       {contacts.map((contact, index, image) => (
-                        <div>
+                        <div key={index}>
                           <div>
                             <Grid container spacing={1}>
                               <Grid
