@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Blinker|Roboto+Slab&display=swap');
+
+$font-primary: "Roboto Slab", serif !important;
+$font-secondary: 'Source Sans Pro', sans-serif !important;
+$font-tertiary: 'Blinker', sans-serif;
+
+$color-primary: #ff4500;
+$color-secondary: #008080;
+$color-accent1: #f5f0e3;
+
+.contact-card {
+  max-width: 600px !important;
+  background: linear-gradient(transparent, $color-accent1);
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-name {
+  font-family: $font-primary;
+  font-size: 3.1em !important;
+  color: $color-primary !important;
+  line-height: 1.5em !important;
+  font-weight: 800 !important;
+  text-align: center;
+}
+.contact-title {
+  font-family: $font-primary;
+  font-size: 2em !important;
+  color: $color-secondary !important;
+  line-height: 0em !important;
+  font-weight: 800 !important;
+  text-align: center;
+}
+.avatarlarge {
+  width: 100% !important;
+  height: 100% !important;
+  left: "50%" !important;
+  transform: "translate(-50%,0)" !important;
+  margin-bottom: "1em" !important;
+}
+.contact-icon{
+  float: right;
+  text-align: right;
+}
+.contact-source {
+  font-size: 1.7em !important;
+  font-family: $font-tertiary;
+}
+.contact-source:hover {
+  color: $color-primary;
+}
+.verticalcenter {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  vertical-align: middle !important;
+  text-anchor: "middle" !important;
+}
+.verticalcentercontent {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+@media screen and (max-width: 599px) {
+  .contact-source {
+    font-size: 1em !important;
+  }
+  .contact-name {
+    font-size: 2em !important;
+  }
+  .contact-title {
+    font-size: 1.5em !important;
+  }
+}
